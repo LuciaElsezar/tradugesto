@@ -1,1 +1,8 @@
-<p>alfabeto works!</p>
+<h1>Alfabeto</h1>
+<div class="grid-container">
+    <div *ngFor="let letra of alfabeto" class="grid-item">
+        <p class="letra">{{letra.nombre}}</p>
+        <img class="sena-m" src="{{letra.senaEspanol}}" alt="seña castellana de la letra {{letra.nombre}}">
+        <img class="sena-m" src="{{letra.senaUniversal}}" alt="seña universal de la letra {{letra.nombre}}">
+    </div>    
+</div>

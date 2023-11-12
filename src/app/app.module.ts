@@ -5,32 +5,35 @@ import { Routes, RouterModule, provideRouter, withComponentInputBinding } from '
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './componentes/header/header.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { ContentAlfabetoComponent } from './componentes/content-alfabeto/content-alfabeto.component';
 import { ContentTraductorComponent } from './componentes/content-traductor/content-traductor.component';
 import { ContentDiccionarioComponent } from './componentes/content-diccionario/content-diccionario.component';
 import { IndexComponent } from './pantallas/index/index.component';
-import { AlfabetoComponent } from './pantallas/alfabeto/alfabeto.component';
 import { DiccionarioComponent } from './pantallas/diccionario/diccionario.component';
 import { TraductorComponent } from './pantallas/traductor/traductor.component';
+import { AlfabetoComponent } from './pantallas/alfabeto/alfabeto.component';
 
 const routes: Routes = [
-  {path: '', component: IndexComponent}
+  {path: '', component: IndexComponent},
+  {path: 'alfabeto', component: AlfabetoComponent},
+  {path: 'diccionario', component: DiccionarioComponent},
+  {path: 'traductor', component: TraductorComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    NavbarComponent,
     FooterComponent,
     ContentAlfabetoComponent,
     ContentTraductorComponent,
     ContentDiccionarioComponent,
     IndexComponent,
-    AlfabetoComponent,
     DiccionarioComponent,
-    TraductorComponent
+    TraductorComponent,
+    AlfabetoComponent
   ],
   imports: [
     BrowserModule,

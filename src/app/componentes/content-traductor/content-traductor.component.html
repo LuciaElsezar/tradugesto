@@ -1,1 +1,8 @@
-<p>traductor works!</p>
+<h1>Traductor</h1>
+<input #input (keyup.enter)="traducir(input.value)" (blur)="traducir(input.value)">
+<div class="grid-container">
+    <div *ngFor="let letra of inputSenaEspanol" class="grid-item">
+        <img src="{{letra}}" alt="Letra" class="sena-s">
+    </div>
+</div>
+<button class="btn btn-primary btn-sm" (click)="traducir(input.value)">Traducir</button>
