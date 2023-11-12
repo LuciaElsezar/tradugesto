@@ -1,1 +1,14 @@
-<p>diccionario works!</p>
+<h1>Diccionario</h1>
+<input #input (keyup.enter)="buscar(input.value); traducir(input.value)" (blur)="buscar(input.value); traducir(input.value)">
+<div class="grid-container">
+    <p>{{asd}}</p>
+    <div *ngIf="inputSenaPalabra">
+        <img src="{{inputSenaPalabra}}" alt="Palabra en seña" class="sena-m">
+    </div>
+</div>
+<div class="grid-container">
+    <div *ngFor="let letra of inputSenaEspanol" class="grid-item">
+        <img src="{{letra}}" alt="Letra" class="sena-s">
+    </div>
+</div>
+<button class="btn btn-primary btn-m" (click)="buscar(input.value); traducir(input.value)">Buscar</button>

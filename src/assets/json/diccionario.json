@@ -3,6 +3,18 @@
         {
             "palabra":"hola",
             "senaEspanol":"../../../assets/diccionario-senas-espanol/hola.png"
+        },
+        {
+            "palabra":"adios",
+            "senaEspanol":"../../../assets/diccionario-senas-espanol/adios.png"
+        },
+        {
+            "palabra":"avion",
+            "senaEspanol":"../../../assets/diccionario-senas-espanol/avion.png"
+        },
+        {
+            "palabra":"barco",
+            "senaEspanol":"../../../assets/diccionario-senas-espanol/barco.png"
         }
     ]
 }

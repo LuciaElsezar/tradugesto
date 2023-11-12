@@ -15,8 +15,6 @@ export class ContentTraductorComponent implements OnInit{
   inputTexto = '';
   inputSenaEspanol:any;
   inputSenaUniversal:any;
-  asd: any;
-
 
   constructor(private DiccionarioService: DiccionarioService, private AlfabetoService: AlfabetoService){ }
 
@@ -26,20 +24,6 @@ export class ContentTraductorComponent implements OnInit{
       {
         next: (data: any)=>{
           this.alfabeto = data["alfabeto"];
-          console.log(data)
-        },
-
-        error:(err: any)=>{
-          alert("Se ha producido un error. Por favor, intente nuevamente.");
-          console.log(err)
-        }
-      }
-    );
-
-    this.DiccionarioService.getDiccionario().subscribe(
-      {
-        next: (data: any)=>{
-          this.diccionario = data["diccionario"];
           console.log(data)
         },
 
