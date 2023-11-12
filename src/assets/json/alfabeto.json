@@ -1,0 +1,11 @@
+{
+    "alfabeto":[
+        {
+            "letraA":{
+                "letra":"A",
+                "senaEspanol":"../../../assets/alfabeto-espanol/a.png",
+                "senaUniversal":"../../../assets/alfabeto-universal/a.png"
+            }
+        }
+    ]
+}
