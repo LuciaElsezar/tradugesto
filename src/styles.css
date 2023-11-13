@@ -1,8 +1,22 @@
+:root{
+    --sombra: rgba(0,0,0,0.2);
+    --blanco: rgba(255,255,255,1);
+    --beige: #f5e7de;
+    --marron-claro: #844f39;
+    --marron-oscuro: #54311a; 
+}
+
+.navbar{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 8rem));
-    gap: 0.2rem;
-    justify-content: start;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -10,15 +24,23 @@
 .grid-item{
     justify-items:center;
     align-items: center;
-    background-color: antiquewhite;
+    border-radius: 0.3rem;
+    border-color: var(--sombra);
+    border-width: 0.1rem;
+    border-style: solid;
+    box-shadow: 0px 2px 8px 2px var(--sombra);
+    background: var(--blanco);
+    height: 22rem;
 }
 
 .sena-m, .sena-s{
     height: auto;
+    padding: 0.1rem;
 }
 
 .sena-m{
     width: 4rem;
+
 }
 
 .sena-s{
