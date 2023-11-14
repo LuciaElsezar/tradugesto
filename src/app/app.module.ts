@@ -14,6 +14,7 @@ import { IndexComponent } from './pantallas/index/index.component';
 import { DiccionarioComponent } from './pantallas/diccionario/diccionario.component';
 import { TraductorComponent } from './pantallas/traductor/traductor.component';
 import { AlfabetoComponent } from './pantallas/alfabeto/alfabeto.component';
+import { HeroComponent } from './componentes/hero/hero.component';
 
 const routes: Routes = [
   {path: '', component: IndexComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
     IndexComponent,
     DiccionarioComponent,
     TraductorComponent,
-    AlfabetoComponent
+    AlfabetoComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
