@@ -1,8 +1,19 @@
 <h1>Traductor</h1>
-<input #input (keyup.enter)="traducir(input.value)" (blur)="traducir(input.value)">
+<div class="search-container">
+    <input #input (keyup.enter)="traducir(input.value)" (blur)="traducir(input.value)">
+    <button class="btn btn-primary btn-m" (click)="traducir(input.value)">Traducir</button>
+   
+</div>
+
+
 <div class="grid-container">
     <div *ngFor="let letra of inputSenaEspanol" class="grid-item">
         <img src="{{letra}}" alt="Letra" class="sena-s">
     </div>
 </div>
-<button class="btn btn-primary btn-m" (click)="traducir(input.value)">Traducir</button>
+
+<h1>Traductor</h1>
+<div class="explanation">
+    <p>Este traductor te ayuda a traducir palabras a lenguaje de señas. Simplemente escribe la palabra o letra que buscas y presiona "Traducir".</p>
+</div>
+
